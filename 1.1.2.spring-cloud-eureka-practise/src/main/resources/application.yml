@@ -2,4 +2,4 @@ server:
   port: 1112
 spring:
   application:
-    name: eureka-server2
+    name: eureka-server

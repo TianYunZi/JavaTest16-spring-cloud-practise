@@ -1,0 +1,8 @@
+feign:
+  hystrix:
+    enabled: true    #添加熔断器支持
+server:
+  port: 9092
+spring:
+  application:
+    name: spring-cloud-consumer

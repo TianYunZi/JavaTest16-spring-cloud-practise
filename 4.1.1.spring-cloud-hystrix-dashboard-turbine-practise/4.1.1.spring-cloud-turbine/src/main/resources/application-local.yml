@@ -1,0 +1,19 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://192.168.232.129:1111/eureka/,http://192.168.232.129:1112/eureka/,http://192.168.232.129:1113/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 5
+    prefer-ip-address: true
+#    ip-address: ${spring.cloud.client.ipAddress}:${server.port}
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    status-page-url: http://${spring.cloud.client.ipAddress}:${server.port}/swagger-ui.html
+    health-check-url: http://${spring.cloud.client.ipAddress}:${server.port}/health
+turbine:
+  app-config: spring-cloud-consumer,spring-cloud-consumer-01,spring-cloud-consumer-02
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
