@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>5.1.1.spring-cloud-config-server</module>
+        <module>5.1.1.spring-cloud-config-client</module>
     </modules>
 
 
