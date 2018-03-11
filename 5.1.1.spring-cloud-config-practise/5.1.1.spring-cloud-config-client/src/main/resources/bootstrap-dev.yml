@@ -12,12 +12,3 @@ eureka:
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}
     status-page-url: http://${spring.cloud.client.ipAddress}:${server.port}/swagger-ui.html
     health-check-url: http://${spring.cloud.client.ipAddress}:${server.port}/health
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/TianYunZi/JavaTest16-spring-cloud-practise    # 配置git仓库的地址
-          search-paths: config-repo                             # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username: TianYunZi                                             # git仓库的账号
-          password:                                              # git仓库的密码

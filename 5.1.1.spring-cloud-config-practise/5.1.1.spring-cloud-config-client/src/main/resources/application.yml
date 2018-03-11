@@ -3,3 +3,6 @@ server:
 spring:
   application:
     name: spring-cloud-config-client
+management:
+  security:
+    enabled: false # 刷新时，关闭安全验证
