@@ -20,4 +20,9 @@ spring:
           uri: https://github.com/TianYunZi/JavaTest16-spring-cloud-practise    # 配置git仓库的地址
           search-paths: config-repo                             # git仓库地址下的相对地址，可以配置多个，用,分割。
           username: TianYunZi                                             # git仓库的账号
-          password: 20150130TUESDAy                                             # git仓库的密码
+          password:                                              # git仓库的密码
+  rabbitmq:
+    host: 192.168.232.129
+    port: 5672
+    username: mq
+    password: mq

@@ -1,8 +1,8 @@
 server:
-  port: 9096
+  port: 9097
 spring:
   application:
-    name: spring-cloud-config-server
+    name: spring-cloud-config-client
 management:
   security:
     enabled: false # 刷新时，关闭安全验证
